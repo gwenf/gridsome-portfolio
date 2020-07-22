@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-app",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "vuetify": "2.3.5"
+  },
+  "devDependencies": {
+    "webpack-node-externals": "2.5.0"
+  }
+}
