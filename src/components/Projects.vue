@@ -1,5 +1,5 @@
 <template>
-  <section class="project-section">
+  <section id="projects" class="project-section">
     <v-container>
       <v-row>
         <v-col>

@@ -2,9 +2,6 @@
   <v-app>
     <v-navigation-drawer width="240px" permanent fixed>
       <v-list-item>
-        <!-- <v-list-item-avatar>
-          <img src="https://randomuser.me/api/portraits/men/81.jpg">
-        </v-list-item-avatar> -->
         <v-list-item-content>
           <v-list-item-title class="title">
             Gwendolyn Faraday
@@ -25,6 +22,7 @@
           v-for="item in items"
           :key="item.title"
           link
+          :to="`#${item.title.toLowerCase().replace(' & ', '-')}`"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -66,6 +64,9 @@ query {
 </static-query>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 .v-application--wrap {
   flex-direction: row;
 }
