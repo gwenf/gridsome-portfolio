@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col sm="6">
-          <g-image alt="Example image" src="~/profile.png" width="400" />
+          <g-image alt="Example image" src="~/profile.png" width="380" />
         </v-col>
         <v-col sm="6" class="d-flex flex-column justify-center">
           <h1>Hi, I'm Gwen.</h1>
@@ -19,3 +19,9 @@
     </v-container>
   </section>
 </template>
+
+<style scoped>
+.g-image {
+  border-radius: 100%;
+}
+</style>
